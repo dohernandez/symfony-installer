@@ -11,7 +11,7 @@
 
 ## How to use it?
 
-Using the [`make`](http://www.sis.pitt.edu/mbsclass/tutorial/advanced/makefile/whatis.htm) unix utility. 
+Using the unix utility [`make`](http://www.sis.pitt.edu/mbsclass/tutorial/advanced/makefile/whatis.htm). 
 
 ```bash
 $ make
