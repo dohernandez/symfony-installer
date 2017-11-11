@@ -14,7 +14,7 @@
 ```
 docker run -it --rm \
   -u $(id -u):$(id -g) \
-  -v $(pwd):/app ypereirareis/symfony-installer new PROJECT_NAME
+  -v $(pwd):/app dohernandez/symfony-installer new PROJECT_NAME
 ```
 
 ## Symfony 2.8
@@ -22,7 +22,7 @@ docker run -it --rm \
 ```
 docker run -it --rm \
   -u $(id -u):$(id -g) \
-  -v $(pwd):/app ypereirareis/symfony-installer new PROJECT_NAME 2.8
+  -v $(pwd):/app dohernandez/symfony-installer new PROJECT_NAME 2.8
 ```
 
 ## Other versions
@@ -30,7 +30,7 @@ docker run -it --rm \
 ```
 docker run -it --rm \
   -u $(id -u):$(id -g) \
-  -v $(pwd):/app ypereirareis/symfony-installer new PROJECT_NAME VERSION_NUMBER
+  -v $(pwd):/app dohernandez/symfony-installer new PROJECT_NAME VERSION_NUMBER
 ```
 
 ## Help
@@ -38,5 +38,5 @@ docker run -it --rm \
 ```
 docker run -it --rm \
   -u $(id -u):$(id -g) \
-  -v $(pwd):/app ypereirareis/symfony-installer
+  -v $(pwd):/app dohernandez/symfony-installer
 ```
