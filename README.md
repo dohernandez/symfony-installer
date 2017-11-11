@@ -2,41 +2,38 @@
 
 ## PHP Version
 
-* PHP 7
+* PHP 7.x
 
 ## Important
 
 * Generate project with current host user: `-u $(id -u):$(id -g)`
 * Generate project on host filesystem: `-v $(pwd):/app`
 
-## Last version Symfony project (3.0 at this date)
+## How to use it?
 
-```
-docker run -it --rm \
-  -u $(id -u):$(id -g) \
-  -v $(pwd):/app dohernandez/symfony-installer new PROJECT_NAME
-```
+Using the [`make`](http://www.sis.pitt.edu/mbsclass/tutorial/advanced/makefile/whatis.htm) unix utility. 
 
-## Symfony 2.8
+```bash
+$ make
+Symfony Installer
 
-```
-docker run -it --rm \
-  -u $(id -u):$(id -g) \
-  -v $(pwd):/app dohernandez/symfony-installer new PROJECT_NAME 2.8
-```
+USAGE
+	make command [arguments]
 
-## Other versions
+COMMANDS
+	build: 			Build the docker image for the project.
+	help: 			Symfony installer help.
+	create: 		Create a new Symfony project.
 
-```
-docker run -it --rm \
-  -u $(id -u):$(id -g) \
-  -v $(pwd):/app dohernandez/symfony-installer new PROJECT_NAME VERSION_NUMBER
-```
+SYNOPSIS
+	build
+	help
+	create	[PROJECT_NAME] [PROJECT_ROOT_PATH] ( [VERSION] )
 
-## Help
+DESCRIPTION
+	PROJECT_NAME		The name of the project
 
-```
-docker run -it --rm \
-  -u $(id -u):$(id -g) \
-  -v $(pwd):/app dohernandez/symfony-installer
+	PROJECT_ROOT_PATH	The root path of the project
+
+	VERSION			Symfony version. (lts|2.8|3.0|...|3.3) default: 3.3
 ```
